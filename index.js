@@ -1,6 +1,13 @@
-function takeANumber(array, name) {
-  array.push(name);
-  return `Welcome, ${name}. You are number ${array.length} in line.`;
+//function takeANumber(array, name) {
+//  array.push(name);
+//  return `Welcome, ${name}. You are number ${array.length} in line.`;
+//} 
+
+var n = 0;
+
+function takeANumber(array) {
+  array.push(n++);
+  return `You are number ${n} in line!`;
 }
 
 function nowServing(array) {
@@ -8,7 +15,7 @@ function nowServing(array) {
     return `There is nobody waiting to be served!`;
   } else {
     return `Currently serving ${array.shift()}.`;
-  }
+  } 
 }
 
 function currentLine(array) {
